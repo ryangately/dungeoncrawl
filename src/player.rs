@@ -19,6 +19,7 @@ impl Player {
         );
     }
 
+    // updates the player's position if an arrow key was pressed
     pub fn update(&mut self, ctx: &mut BTerm, map: &Map) {
         if let Some(key) = ctx.key {
             let delta = match key {
